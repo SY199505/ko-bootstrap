@@ -33,5 +33,17 @@ namespace BootstrapIntroduction.Controllers
 
             return View();
         }
+        public ActionResult Basic()
+        {
+            ViewBag.Message = "Your basic page.";
+
+            return View();
+        }
+        public ActionResult Advanced()
+        {
+            ViewBag.Message = "You advanced";
+
+            return View();
+        }
     }
 }
