@@ -41,9 +41,13 @@ namespace BootstrapIntroduction.Controllers
         }
         public ActionResult Advanced()
         {
-            ViewBag.Message = "You advanced";
+            var person = new Person
+            {
+                FirstName = "Eric",
+                LastName = "McQuiggan"
+            };
 
-            return View();
+            return View(person);
         }
     }
 }

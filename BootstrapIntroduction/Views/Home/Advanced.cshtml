@@ -1,4 +1,4 @@
-﻿
+﻿@model BootstrapIntroduction.Models.Person
 @{
     ViewBag.Title = "Advanced";
 }
@@ -17,7 +17,7 @@
             };
         };
 
-        var viewModel = new ViewModel('FirstName', 'LastName');
+        var viewModel = new ViewModel('@Model.FirstName', '@Model.LastName');
         ko.applyBindings(viewModel);
     </script>    
 }
